@@ -60,25 +60,25 @@ route.post('/signup', async (req, res) => {
 			res.status(200).send(JSON.stringify(obj));
 			//Sending mail to user for succesfull registration
 			const user_email = saved_user.email;
-		    const msg = { 
-			to: user_email,
-			from: process.env.EMAIL_ID, // Use the email address or domain you verified above
-			subject: 'Thanks for registering',
-			text: 'and easy to do anywhere, even with Node.js',
-			html: `<p>Thanks ${saved_user.name} for registering with us.</p><br>
+			const msg = {
+				to: user_email,
+				from: process.env.EMAIL_ID, // Use the email address or domain you verified above
+				subject: 'Thanks for registering',
+				text: 'and easy to do anywhere, even with Node.js',
+				html: `<p>Thanks ${saved_user.name} for registering with us.</p><br>
 			<p> Please report the Potholes around your locality</p><br>
 			`,
-		};
-		sgMail.send(msg).then(
-			() => {},
-			(error) => {
-				console.error(error);
+			};
+			sgMail.send(msg).then(
+				() => {},
+				(error) => {
+					console.error(error);
 
-				if (error.response) {
-					console.error(error.response.body);
+					if (error.response) {
+						console.error(error.response.body);
+					}
 				}
-			}
-		);
+			);
 			return;
 		}
 	} catch (err) {
@@ -157,7 +157,6 @@ route.post('/logout', async (req, res) => {
 	}
 });
 
-
 // Route for Forgot Password
 route.post('/forgotpassword', async (req, res) => {
 	const obj = req.body.object_user;
@@ -199,3 +198,33 @@ route.post('/forgotpassword', async (req, res) => {
 		res.status(500).send(JSON.stringify(obj));
 	}
 });
+
+// Reset password route
+route.post('/resetpassword', async (req, res) => {
+	const obj = req.body.object_user;
+	try {
+		const newpass = req.body.newpass;
+		const new_pass = await bcrypt.hash(newpass, 8);
+		const token = req.body.token;
+		var useremail = jwt.verify(token, process.env.auth_user_reset_key);
+		const email = useremail.email;
+		const data = await user.findOne({ email });
+		if (data) {
+			data.password = new_pass;
+			const updated_user = await data.save();
+			obj.Message = 'Password changed successfully';
+			obj.Email = data.email;
+			obj.Name = data.name;
+			obj.Phn_no = data.phn_no;
+			res.status(200).send(JSON.stringify(obj));
+		} else {
+			obj.Error = ' You are not Authorized';
+			res.status(201).send(JSON.stringify(obj));
+		}
+	} catch (err) {
+		console.log(err);
+		obj.Error = 'Something went wrong';
+		res.status(500).send(JSON.stringify(obj));
+	}
+});
+module.exports = route;
