@@ -1,5 +1,5 @@
 function signup(name,id,pass,city_val,done){
-    $.post('https://bug-slayers.herokuapp.com/official/signup',{
+    $.post('https://bug-slayerss.herokuapp.com/official/signup',{
         name:name,
         employee_id:id,
         password:pass,
@@ -27,7 +27,7 @@ $('#btn1').click(()=>{
                 contain.append($(`<p class="text-danger">This User Already exists</p>`))
             }
             else{
-                window.location.replace('https://bugslayers.netlify.app/public/login')
+                window.location.replace('https://bugslayerss.netlify.app/public/login')
             }
       })
   }

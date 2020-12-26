@@ -1,5 +1,5 @@
 function login(token,password,done){
-    $.post('https://bug-slayers.herokuapp.com/user/resetpassword',{
+    $.post('https://bug-slayerss.herokuapp.com/user/resetpassword',{
        newpass:password, 
        token:token
     },function(data){
@@ -23,7 +23,7 @@ $(function(){
         contain.empty()
         contain.append($(`<p class="text-danger">Password Chnaged <br>Please login again using app</p>`))
              //window.localStorage.token=data.token
-           //window.location.replace('https://bugslayers.netlify.app/dashboard')
+           //window.location.replace('https://bugslayerss.netlify.app/dashboard')
         }
         })
     })

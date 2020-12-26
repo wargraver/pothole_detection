@@ -1,5 +1,5 @@
 function login(employee_id,password,done){
-    $.post('https://bug-slayers.herokuapp.com/official/login',{
+    $.post('https://bug-slayerss.herokuapp.com/official/login',{
         employee_id:employee_id,
         password:password
     },function(data){
@@ -21,7 +21,7 @@ $(function(){
        contain.append($(`<p class="text-danger">Incorrect ID or Password</p>`))}
      else{
              window.localStorage.token=data.token
-           window.location.replace('https://bugslayers.netlify.app/dashboard')
+           window.location.replace('https://bugslayerss.netlify.app/dashboard')
         }
         })
     })
