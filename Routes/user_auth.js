@@ -60,7 +60,7 @@ route.post('/signup', async (req, res) => {
 			res.status(200).send(JSON.stringify(obj));
 			//Sending mail to user for succesfull registration
 			const user_email = saved_user.email;
-		    const msg = {
+		    const msg = { 
 			to: user_email,
 			from: process.env.EMAIL_ID, // Use the email address or domain you verified above
 			subject: 'Thanks for registering',
