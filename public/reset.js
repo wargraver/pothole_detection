@@ -32,7 +32,8 @@ $(function(){
        // contain.empty()
         contain.append($(`<p class="text-danger">Password Chnaged</p>`))
              //window.localStorage.token=data.token
-           window.location.replace('https://bugslayerss.netlify.app/dashboard')
+           window.alert("Please Login Using App")
+           wondow.close()
         }
         })
     })
