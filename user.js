@@ -1,5 +1,5 @@
 function get_pending(done){
-    $.post('https://bug-slayers.herokuapp.com/check-official/info',{
+    $.post('https://bug-slayerss.herokuapp.com/check-official/info',{
         token:window.localStorage.token,
         id:window.localStorage.id
     },function(data){
@@ -46,7 +46,7 @@ $(function(){
        msg.empty()
        contain.empty()
        msg.append(user_load(data))
-       if(data.error!=null) window.location.replace('https://bugslayers.netlify.app/public/login')
+       if(data.error!=null) window.location.replace('https://bugslayerss.netlify.app/public/login')
       else{ for(let i=0;i<data.Pending_request.length;i++){
         contain.append(load(data.Pending_request[i],i,false))
        }

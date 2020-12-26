@@ -1,5 +1,5 @@
 function get_resolved(done){
-    $.post('https://bug-slayers.herokuapp.com/check-official/resolved',{
+    $.post('https://bug-slayerss.herokuapp.com/check-official/resolved',{
         token:window.localStorage.token
     },function(data){
         done(data)
@@ -30,7 +30,7 @@ $(function(){
     let contain=$('#dashboard')
     get_resolved(function(data){
        contain.empty()
-       if(data.error!=null) window.location.replace('https://bugslayers.netlify.app/public/login')
+       if(data.error!=null) window.location.replace('https://bugslayerss.netlify.app/public/login')
       else{ for(let i=0;i<data.issues_solved.length;i++){
         // data.issues_solved[i].coordinates = data.issues_solved[i].coordinates;
         // console.log(data.issues_solved[i].coordinates.split())
@@ -50,7 +50,7 @@ $(function(){
         console.log(id2)
         window.localStorage.id=id2
         //window.open('https://bugslayers.netlify.app/user')
-        window.location.replace('https://bugslayers.netlify.app/user')
+        window.location.replace('https://bugslayerss.netlify.app/user')
     })
     $('.map').on('click',function(clicked){
         let coor=($(clicked)[0].target.value).toString()
