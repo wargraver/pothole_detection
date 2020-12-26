@@ -1,5 +1,5 @@
 function get_pending(done){
-    $.post('https://bug-slayers.herokuapp.com/check-official/pending',{
+    $.post('https://bug-slayerss.herokuapp.com/check-official/pending',{
         token:window.localStorage.token
     },function(data){
         done(data)
@@ -28,7 +28,7 @@ function load(text,temp,i){
   </div>`)
 }
 function resolve(req_id,done){
-    $.post(`https://bug-slayers.herokuapp.com/check-official/resolve/`+req_id,{
+    $.post(`https://bug-slayerss.herokuapp.com/check-official/resolve/`+req_id,{
       token:window.localStorage.token
     },function(data){
         done(data)
@@ -38,7 +38,7 @@ $(function(){
     let contain=$('#dashboard')
     get_pending(function(data){
        contain.empty()
-       if(data.error!=null) window.location.replace('https://bugslayers.netlify.app/public/login')
+       if(data.error!=null) window.location.replace('https://bugslayerss.netlify.app/public/login')
       else{ for(let i=0;i<data.issues_pending.length;i++){
         let temp=''
         for(let j=0;j<data.issues_pending[i].coordinates.length;j++){
@@ -55,7 +55,7 @@ $(function(){
             let temp=$('#msg')
            temp.empty()
            temp.append($(`<p class="text-success"> Request Resolved and email to user has been sent!!!</p>`))
-           window.location.replace('https://bugslayers.netlify.app/dashboard')
+           window.location.replace('https://bugslayerss.netlify.app/dashboard')
        })
     })
     $('.user').on('click',function(clicked){
@@ -63,7 +63,7 @@ $(function(){
         console.log(id2)
         window.localStorage.id=id2
         //window.open('https://bugslayers.netlify.app/user')
-        window.location.replace('https://bugslayers.netlify.app/user')
+        window.location.replace('https://bugslayerss.netlify.app/user')
     })
     $('.map').on('click',function(clicked){
         let coor=($(clicked)[0].target.value).toString()
