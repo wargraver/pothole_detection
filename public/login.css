@@ -1,0 +1,59 @@
+.dark-overlay{
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    min-height: 90vh;
+    background: rgba(0, 0, 0, 0.6);
+    padding-top: 150px;
+}
+.vertical-center {
+    min-height: 100%;
+    min-height: 90vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  .carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: .6s;
+    transition-property: opacity;
+   }
+   
+   .carousel-fade  .carousel-item.active,
+   .carousel-fade  .carousel-item-next.carousel-item-left,
+   .carousel-fade  .carousel-item-prev.carousel-item-right {
+     opacity: 1;
+   }
+   
+   .carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-right {
+    opacity: 0;
+   }
+   
+   .carousel-fade  .carousel-item-next,
+   .carousel-fade .carousel-item-prev,
+   .carousel-fade .carousel-item.active,
+   .carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+   }
+
+   .navbar-brand img{
+    width: 70px;    
+    margin-left: 30px;
+}
+
+.navbar .nav-link:hover{
+    background-color: #007bff;
+}
+
+body {
+  overflow: hidden; /* Hide scrollbars */
+} 
+
+
+   /* login/signup form */
+
+   
