@@ -142,3 +142,17 @@ route.post('/login', async (req, res) => {
 		res.status(500).send(JSON.stringify(obj));
 	}
 });
+
+//Designing Routes for logout of user
+route.post('/logout', async (req, res) => {
+	const obj = req.body.object_user;
+	try {
+		await token.deleteOne({ value: req.body.token });
+		obj.Message = 'Logged out user successfully';
+		res.status(200).send(JSON.stringify(obj));
+	} catch (err) {
+		console.log(err);
+		obj.Error = 'Something went wrong while Logging out user';
+		res.status(200).send(JSON.stringify(obj));
+	}
+});
