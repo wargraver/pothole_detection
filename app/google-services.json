@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "422759314016",
+    "firebase_url": "https://potholes-detection-90b56.firebaseio.com",
+    "project_id": "potholes-detection-90b56",
+    "storage_bucket": "potholes-detection-90b56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422759314016:android:9ea9c006df90dab14e4905",
+        "android_client_info": {
+          "package_name": "com.example.pitholemanagment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422759314016-rd8n1bd6sl3m3qu8lvv4c47svk9eqala.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBieVzoD_6ekzEwMr12wAiqvRiWZzhlaqk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422759314016-rd8n1bd6sl3m3qu8lvv4c47svk9eqala.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
