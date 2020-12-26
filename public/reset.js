@@ -8,7 +8,7 @@ function getParameterByName(name, url = window.location.href) {
 }
 
 function login(token,password,done){
-    $.post('https://bug-slayerss.herokuapp.com/user/resetpassword',{
+    $.post('https://bug-slayerss.herokuapp.com/user/resetpassword?token',{
        newpass:password, 
        token:token
     },function(data){
