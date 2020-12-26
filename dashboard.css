@@ -1,14 +1,14 @@
 body {
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-  }
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
 i {
-  color: red;
+color: red;
 }
 
 .card{
-  transition: transform .2s; /* Animation */
+transition: transform .2s; /* Animation */
 }
 .card:hover{
-  box-shadow: 10px 10px 5px grey;
-  transform: scale(1.05);
+box-shadow: 10px 10px 5px grey;
+transform: scale(1.05);
 }
