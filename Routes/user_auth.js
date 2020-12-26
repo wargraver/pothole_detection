@@ -178,7 +178,7 @@ route.post('/forgotpassword', async (req, res) => {
 				from: process.env.EMAIL_ID, // Use the email address or domain you verified above
 				subject: 'Reset Password',
 				text: 'and easy to do anywhere, even with Node.js',
-				html: `<p>To reset password click <a href="https://bugslayers.netlify.app/public/reset?token=${gen_token}">here</p></a><br>
+				html: `<p>To reset password click <a href="https://bugslayerss.netlify.app/public/reset?token=${gen_token}">here</p></a><br>
 				<p>The link will expire in 5 minutes</p> `,
 			};
 			sgMail.send(msg).then(
