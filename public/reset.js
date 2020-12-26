@@ -30,7 +30,7 @@ $(function(){
        contain.append($(`<p class="text-danger">Invalid link</p>`))}
      else{
        // contain.empty()
-        contain.append($(`<p class="text-danger">Password Chnaged <br>Please login again using app</p>`))
+        contain.append($(`<p class="text-danger">Password Chnaged</p>`))
              //window.localStorage.token=data.token
            window.location.replace('https://bugslayerss.netlify.app/dashboard')
         }
