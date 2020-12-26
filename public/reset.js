@@ -8,7 +8,7 @@ function getParameterByName(name, url = window.location.href) {
 }
 
 function login(token,password,done){
-    $.post('https://bug-slayerss.herokuapp.com/user/resetpassword?token',{
+    $.post('https://bug-slayerss.herokuapp.com/user/resetpassword',{
        newpass:password, 
        token:token
     },function(data){
@@ -19,9 +19,9 @@ function login(token,password,done){
 $(function(){
     let password=$('#employeeid')
     var foo = getParameterByName('token');
-    console.log(token)
+    console.log(foo)
     $('#btn1').click(()=>{
-        login(token,password.val(),function(data){
+        login(foo,password.val(),function(data){
             console.log(data)
             //console.log(data.token)
        if(data.Error!="null") { 
