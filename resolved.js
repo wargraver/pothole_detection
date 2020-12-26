@@ -10,7 +10,7 @@ function load(text,temp,i){
     return $(` <div class="col-sm-4">
     <div class= "card w-75 ml-5 mb-4 mt-5">
     <div class="card-body">
-    <b><h5 class="card-title text-center"><i class="fas fa-exclamation-triangle"></i>  Request ${i+1}</h5></b><hr>
+    <b><h5 class="card-title text-center"><i class="fas fa-check-circle"></i>  Request ${i+1}</h5></b><hr>
     <p class="card-text"><b>Pincode:</b> ${text.address}
      <br>   <b>Coord:</b> ${text.coordinates}
     <br>
