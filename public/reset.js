@@ -1,3 +1,12 @@
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
 function login(token,password,done){
     $.post('https://bug-slayerss.herokuapp.com/user/resetpassword',{
        newpass:password, 
@@ -9,7 +18,7 @@ function login(token,password,done){
 
 $(function(){
     let password=$('#employeeid')
-    var token = urlParams.get('token')
+    var foo = getParameterByName('token');
     console.log(token)
     $('#btn1').click(()=>{
         login(token,password.val(),function(data){
