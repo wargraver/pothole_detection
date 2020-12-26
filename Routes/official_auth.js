@@ -112,3 +112,19 @@ route.post('/login', async (req, res) => {
 	}
 });
 
+// Logout route
+route.post('/logout', async (req, res) => {
+	const official_object = req.body.official_object;
+	try {
+		await token_official.deleteOne({ value: req.body.token });
+		official_object.msg = 'Logged out user successfully';
+		res.status(200).send(JSON.stringify(official_object));
+	} catch (err) {
+		console.log(err);
+		official_object.error = 'Something went wrong while Logging out user';
+		res.status(500).send(official_object);
+	}
+});
+
+// exporting route
+module.exports = route;
