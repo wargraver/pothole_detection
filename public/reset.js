@@ -32,7 +32,7 @@ $(function(){
        // contain.empty()
         contain.append($(`<p class="text-danger">Password Chnaged <br>Please login again using app</p>`))
              //window.localStorage.token=data.token
-           //window.location.replace('https://bugslayerss.netlify.app/dashboard')
+           window.location.replace('https://bugslayerss.netlify.app/dashboard')
         }
         })
     })
