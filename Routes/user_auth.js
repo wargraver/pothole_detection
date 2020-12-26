@@ -87,3 +87,58 @@ route.post('/signup', async (req, res) => {
 		res.status(504).send(JSON.stringify(obj));
 	}
 });
+
+//Desigining Login route for user
+route.post('/login', async (req, res) => {
+	const obj = req.body.object_user;
+	try {
+		const email = req.body.email;
+		const password = req.body.password;
+		//checking if any field is empty or not
+		if (validator.isEmpty(email) || validator.isEmpty(password)) {
+			obj.Error = 'Please enter all the fields';
+			res.status(200).send(JSON.stringify(obj));
+			return;
+		}
+		//checking whether email is valid
+		if (validator.isEmail(email) == false) {
+			obj.Error = 'Please enter valid email';
+			res.status(200).send(JSON.stringify(obj));
+			return;
+		}
+		//checking if user with given email exists or not
+		const data2 = await user.findOne({ email: email });
+		if (data2 == null) {
+			obj.Error = 'Invalid Credentials';
+			res.status(200).send(JSON.stringify(obj));
+			return;
+		} else {
+			const hashed_pass = data2.password;
+			const result = await bcrypt.compare(password, hashed_pass);
+			if (result == true) {
+				const gen_token = jwt.sign(email, process.env.auth_user_key);
+				//if genrated token already exists
+				const val2 = await token.findOne({ value: gen_token });
+				if (val2 != null) {
+					await token.deleteOne({ value: gen_token });
+				}
+				const save_token = new token({
+					value: gen_token,
+					owner: data2._id,
+				});
+				const vari = await save_token.save();
+				(obj.Message = 'Logged in Successfully'),
+					(obj.Token = gen_token),
+					res.status(200).send(JSON.stringify(obj));
+				return;
+			} else {
+				obj.Error = 'Invalid Credentials';
+				res.status(200).send(JSON.stringify(obj));
+			}
+		}
+	} catch (err) {
+		console.log(err);
+		obj.Error = 'Something went wrong while logging in user';
+		res.status(500).send(JSON.stringify(obj));
+	}
+});
