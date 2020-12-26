@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Main">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.PitholeManagment.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:forceDarkAllowed="false"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/Theme.PitholeManagment.PopupOverlay" >
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="HEHE"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center">
+
+            </TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="57dp">
+
+
+
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_nav"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background=" @color/white"
+        app:itemRippleColor="@color/btn_color"
+        app:itemIconTint="@drawable/bottomnav_selector"
+        app:itemTextColor="@drawable/bottomnav_selector"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/nav_menu"
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

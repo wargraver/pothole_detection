@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/my_reports"
+        android:orderInCategory="100"
+        android:title="My Reports"
+        android:icon="@drawable/my_report"
+
+         />
+    <item
+        android:id="@+id/new_report"
+        android:orderInCategory="100"
+        android:icon="@drawable/add_report1"
+        android:title="New Report"
+        />
+    <item
+        android:id="@+id/account"
+        android:orderInCategory="100"
+        android:title="Account"
+        android:icon="@drawable/ic_outline_account_circle_24"
+        />
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="About"
+        android:icon="@drawable/about"
+        />
+</menu>
