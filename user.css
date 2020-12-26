@@ -1,0 +1,14 @@
+.card-horizontal {
+    display: flex;
+    flex: 1 1;
+}
+i {
+    color: red;
+  }
+  .card{
+    transition: transform .2s; /* Animation */
+  }
+  .card:hover{
+    box-shadow: 10px 10px 5px grey;
+    transform: scale(1.05);
+  }
