@@ -156,3 +156,46 @@ route.post('/logout', async (req, res) => {
 		res.status(200).send(JSON.stringify(obj));
 	}
 });
+
+
+// Route for Forgot Password
+route.post('/forgotpassword', async (req, res) => {
+	const obj = req.body.object_user;
+	try {
+		const email = req.body.email;
+		const data = await user.findOne({ email });
+		console.log(data);
+		if (!data) {
+			obj.Error = 'The given Email does not exist';
+			res.status(200).send(JSON.stringify(obj));
+		} else {
+			const gen_token = jwt.sign({ email }, process.env.auth_user_reset_key, {
+				expiresIn: 300,
+			});
+			obj.Message = 'Email Sent';
+			res.status(200).send(JSON.stringify(obj));
+			const msg = {
+				to: email,
+				from: process.env.EMAIL_ID, // Use the email address or domain you verified above
+				subject: 'Reset Password',
+				text: 'and easy to do anywhere, even with Node.js',
+				html: `<p>To reset password click <a href="https://bugslayers.netlify.app/public/reset?token=${gen_token}">here</p></a><br>
+				<p>The link will expire in 5 minutes</p> `,
+			};
+			sgMail.send(msg).then(
+				() => {},
+				(error) => {
+					console.error(error);
+
+					if (error.response) {
+						console.error(error.response.body);
+					}
+				}
+			);
+		}
+	} catch (err) {
+		console.log(err);
+		obj.Error = 'Something went wrong while Logging out user';
+		res.status(500).send(JSON.stringify(obj));
+	}
+});
