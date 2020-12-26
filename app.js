@@ -83,10 +83,10 @@ app.use((req, res, next) => {
 app.get('/hello', (req, res) => {
 	res.status(200).send(JSON.stringify({ msg: 'hello' }));
 });
-app.use('/user', require('./Routes/user_auth.js'));
+/*app.use('/user', require('./Routes/user_auth.js'));
 app.use('/official', require('./Routes/official_auth.js'));
 app.use('/check-official', require('./Routes/official_status.js'));
-app.use('/check-user', require('./Routes/user_status.js'));
+app.use('/check-user', require('./Routes/user_status.js'));*/
 
 //starting  server
 const port = process.env.PORT || 3000;
