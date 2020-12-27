@@ -29,6 +29,8 @@ It is platform which allows a user to report Pothole in their neighbouring area 
 - **Opera**:	version 9 and up
 <!-- > **Note**: Support for modern mobile browsers is experimental. The website is not responsive in mobile devices until now. -->
 
+## Requirements (Android)
+- MIN SDK VERSION 21
 
 ## Technology Stack Used
 <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>  <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
@@ -36,13 +38,16 @@ It is platform which allows a user to report Pothole in their neighbouring area 
 
 - **Frontend**: HTML5, CSS3, Bootstarp, JQuery
 - **Backend**: Node.js, Express.js
-- **Anrdoid**: Java
-- **Machine Learning**: Tensorflow
+- **Anrdoid**: Java, Firebase ML kit, Retrofit, Navigation Components
+- **Machine Learning**: Tensorflow Lite
 - **IDE**: VS Code
 - **Version Control**: Git and GitHub
 - **Database**: MongoDb
 - **Hosting**: Heroku, Netlify
 
+## Permissions Required (Android)
+- Internet
+- Location/GPS
 
 ## Getting Started
 
