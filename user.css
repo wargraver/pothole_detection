@@ -35,6 +35,9 @@ body {
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
+.navbar .nav-link:hover{
+  background-color: #007bff;
+}
 .card:hover{
 	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(128,128,128,1) 100%); 		
 	moz-transition: all .4s ease-in-out;
