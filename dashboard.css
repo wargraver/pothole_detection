@@ -19,12 +19,16 @@ transform: scale(1.05);
   margin-left: 30px;
 }
 body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite; */
+	background-image: url('./public/img/cool-background.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
 }
 
-@keyframes gradient {
+/* @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -34,4 +38,4 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
-}
+} */
