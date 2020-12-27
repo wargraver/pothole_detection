@@ -1,10 +1,12 @@
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
-i {
+.fa-exclamation-triangle {
 color: red;
 }
-
+.fa-github{
+  color: white;
+}
 .card{
 transition: transform .2s; /* Animation */
 }

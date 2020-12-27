@@ -2,9 +2,12 @@
     display: flex;
     flex: 1 1;
 }
-i {
+.fa-exclamation-triangle {
     color: red;
   }
+.fa-github{
+  color: white;
+}
   .card{
     transition: transform .2s; /* Animation */
   }

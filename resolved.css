@@ -1,10 +1,12 @@
 body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
   }
-  i {
+.fa-check-double {
   color: rgb(13, 233, 13);
   }
-  
+.fa-github{
+  color: white;
+}
   .card{
   transition: transform .2s; /* Animation */
   }
