@@ -41,7 +41,7 @@
    }
 
    .navbar-brand img{
-    width: 70px;    
+    width: 60px;    
     margin-left: 30px;
 }
 
@@ -53,7 +53,9 @@ body {
   overflow: hidden; /* Hide scrollbars */
 } 
 
-
+i {
+  color: white;
+}
    /* login/signup form */
 
    

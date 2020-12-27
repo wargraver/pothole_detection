@@ -1,14 +1,37 @@
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
-i {
+.fa-exclamation-triangle {
 color: red;
 }
-
+.fa-github{
+  color: white;
+}
 .card{
 transition: transform .2s; /* Animation */
 }
 .card:hover{
 box-shadow: 10px 10px 5px grey;
 transform: scale(1.05);
+}
+.navbar-brand img{
+  width: 60px;    
+  margin-left: 30px;
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
