@@ -45,7 +45,7 @@ $(function(){
     get_pending(function(data){
        msg.empty()
        contain.empty()
-       res.emtpy()
+       //res.emtpy()
        msg.append(user_load(data))
        if(data.error!=null) window.location.replace('https://bugslayerss.netlify.app/public/login')
       else{ for(let i=0;i<data.Pending_request.length;i++){
