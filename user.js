@@ -42,6 +42,7 @@ function load(text,i,flag){
 $(function(){
     let contain=$('#user')
     let msg=$('#msg')
+    let res=$('#res')
     get_pending(function(data){
        msg.empty()
        contain.empty()
@@ -52,7 +53,7 @@ $(function(){
         contain.append(load(data.Pending_request[i],i,false))
        }
        for(let i=0;i<data.Solved_request.length;i++){
-        contain.append(load(data.Solved_request[i],i,true))
+        res.append(load(data.Solved_request[i],i,true))
        }
     }
 })
