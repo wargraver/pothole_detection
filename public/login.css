@@ -52,7 +52,9 @@
 body {
   overflow: hidden; /* Hide scrollbars */
 } 
-
+i {
+  background-color: white;
+}
 
    /* login/signup form */
 
