@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.PitholeManagment">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.PitholeManagment.NoActionBar"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="FORGOT PASSWORD"
+                android:textColor="#ffffff"
+                android:layout_marginRight="20dp"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:gravity="center">
+
+            </TextView>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="8dp"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:text="RESET PASSWORD"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingTop="16dp"
+                android:paddingRight="24dp">
+                <!-- Email Label -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="8dp"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email_forgot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/hint_color" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Password Label -->
+
+
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginBottom="40dp"
+                    android:textSize="10dp"
+                    android:background="@drawable/btn_back"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="12dp"
+                    android:textColor="@color/white"
+                    android:text="SEND LINK TO RESET PASSWORD"
+                    android:textStyle="bold"
+                    />
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/progressf"
+                    android:visibility="invisible"
+                    android:layout_marginTop="-134dp"
+                    android:indeterminate="true"
+                    android:indeterminateTintMode="src_atop"
+                    android:indeterminateTint="@color/red"
+                    >
+                </ProgressBar>
+            </LinearLayout>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    tools:context=".Fragment.My_Report">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POTHOLE DETECTION AND MANAGMENT"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/red"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_margin="5dp"
+        ></View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Komst deele de telde te er zeker. Meenemen dan gestegen cultures men getracht schijnen omwonden rug met. Meenemen vestigen en de al eromheen nu uiterste gesloten. Jungles zin wij streken meester enclave. Goa mag zal bezorgden heb financien vochtigen. Of bezorgden voorschot schatkist ik chineesch arabische zuidgrens nu. Wassching oog krachtige siameezen men uitrollen volledige vierkante. Ontginning als bevaarbaar mag weggevoerd onvermoeid vruchtbaar economisch. Scheen al na meende meters gerust. "
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="13dp"
+        android:textColor="@color/black"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_margin="5dp"
+            ></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DEVLOPERS"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="10dp"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/linearl"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card1"
+                        android:layout_width="0dp"
+                        android:layout_height="115dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="12dp"
+                        app:cardBackgroundColor="@color/card3"
+                        app:cardElevation="8dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp">
+                            <ImageView
+                                android:id="@+id/img1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/by2"
+                                android:layout_centerHorizontal="true"
+                                ></ImageView>
+
+                            <TextView
+                                android:id="@+id/tv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:includeFontPadding="false"
+                                android:text="SHANTANU RATHOR"
+                                android:textColor="@color/black"
+                                android:textSize="10sp">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="10sp"
+                                android:textColor="@color/black"
+                                android:includeFontPadding="false"
+                                android:layout_below="@+id/tv1"
+                                android:layout_centerHorizontal="true"
+                                android:text="(APP &amp; ML)">
+
+                            </TextView>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card2"
+                        android:layout_width="0dp"
+                        android:layout_height="115dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="12dp"
+                        app:cardBackgroundColor="@color/card2"
+                        app:cardElevation="8dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp">
+                            <ImageView
+                                android:id="@+id/img2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/by2"
+                                android:layout_centerHorizontal="true"
+                                ></ImageView>
+
+                            <TextView
+                                android:id="@+id/tv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:includeFontPadding="false"
+                                android:text="UTKARSH SINGH"
+                                android:textColor="@color/black"
+                                android:textSize="10sp">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="10sp"
+                                android:textColor="@color/black"
+                                android:includeFontPadding="false"
+                                android:layout_below="@+id/tv2"
+                                android:layout_centerHorizontal="true"
+                                android:text="(WEB &amp; BACKEND)">
+
+                            </TextView>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card3"
+                        android:layout_width="0dp"
+                        android:layout_height="115dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="12dp"
+                        app:cardBackgroundColor="@color/card1"
+                        app:cardElevation="8dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp">
+                            <ImageView
+                                android:id="@+id/img"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/by2"
+                                android:layout_centerHorizontal="true"
+                                ></ImageView>
+
+                            <TextView
+                                android:id="@+id/tv6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:includeFontPadding="false"
+                                android:text="AYUSH TIWARI"
+                                android:textColor="@color/black"
+                                android:textSize="10sp">
+
+                            </TextView>
+                            <TextView
+                                android:id="@+id/total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="10sp"
+                                android:textColor="@color/black"
+                                android:includeFontPadding="false"
+                                android:layout_below="@+id/tv6"
+                                android:layout_centerHorizontal="true"
+                                android:text="(WEB &amp; BACKEND)">
+
+                            </TextView>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

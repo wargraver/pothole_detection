@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp">
+
+        <ImageView
+            android:id="@+id/profileimg"
+            android:layout_width="150dp"
+            android:layout_height="173dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:src="@drawable/by2"></ImageView>
+        <ProgressBar
+            android:id="@+id/progress_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_marginTop="200dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/red"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="gone"></ProgressBar>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear2"
+    android:visibility="gone"
+    android:padding="10dp">
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:layout_marginTop="20dp"
+        android:layout_marginLeft="27dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/name"></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:includeFontPadding="false"></TextView>
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="57dp">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHANTANU"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/line_grey"></View>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:layout_marginTop="20dp"
+        android:layout_marginLeft="27dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/email"></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EMAIL"
+        android:includeFontPadding="false"></TextView>
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="57dp">
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shantanurathore@gmail.com"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"></TextView>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/line_grey"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="27dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/phone"></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PHONE NUMBER"
+        android:includeFontPadding="false"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="57dp">
+        <TextView
+            android:id="@+id/phnno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9997304104"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/line_grey"></View>
+
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
