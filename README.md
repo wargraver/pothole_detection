@@ -20,7 +20,7 @@ It is platform which allows a user to report Pothole in their neighbouring area 
 - **Frontend**: https://bugslayerss.netlify.app/public/login
 - **Backend**: https://bug-slayerss.herokuapp.com
 - **Android Apk**: https://drive.google.com/file/d/1-9bX1CjyYlOCvJHYFp17mPUUYzIde3sN/view
-- **PPT link*: https://www.canva.com/design/DAERe-IBHd4/w2wLb6KcIpFRsbORCLuiDA/view?utm_content=DAERe-IBHd4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton#1
+- **PPT link**: https://www.canva.com/design/DAERe-IBHd4/w2wLb6KcIpFRsbORCLuiDA/view?utm_content=DAERe-IBHd4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton#1
 
 ## Browser Support
 - **Firefox**:	version 4 and up
