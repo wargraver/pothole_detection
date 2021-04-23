@@ -1,7 +1,7 @@
 
 <h1 align="center"> Pithole Management</h1>
 
-It is platform which allows a user to report Pothole in their neighbouring area seamlessly. Also, using this platform, officials can resolve the reported issues easily and the concerened user gets notified
+It is a platform which allows a user to report Pothole in their neighbouring area seamlessly. Also, using this platform, officials can resolve the reported issues easily and the concerned user gets notified
 
 <hr>
 
