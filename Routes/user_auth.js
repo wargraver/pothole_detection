@@ -227,12 +227,12 @@ route.post('/resetpassword', async (req, res) => {
 		res.status(500).send(JSON.stringify(obj));
 	}
 });
-route.get('/test',(req,res)=>{
-	console.log(req)
+route.get('/test/:id',(req,res)=>{
+	console.log(req.pramas.id)
 	res.send({"Msg":"WEB HOOK link HItted"})
 })
-route.post('/test',(req,res)=>{
-	console.log(req)
+route.post('/test/:id',(req,res)=>{
+	console.log(req.params.id)
 	res.send({"Msg":"WEB HOOK link HItted"})
 })
 module.exports = route;
